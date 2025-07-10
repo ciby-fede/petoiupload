@@ -14,7 +14,8 @@
     "next": "15.3.5",
     "csv-parser": "^3.0.0",
     "@supabase/supabase-js": "^2.0.0",
-    "recharts": "^2.7.2"
+    "recharts": "^2.7.2",
+    "json2csv": "^6.0.0"
   },
   "devDependencies": {
     "typescript": "^5",
