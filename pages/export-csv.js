@@ -47,6 +47,10 @@ export async function getServerSideProps({ res }) {
     // Imposta intestazioni HTTP per download
     res.setHeader('Content-Type', 'text/csv');
     res.setHeader('Content-Disposition', 'attachment; filename="sensor_data.csv"');
+    res.setHeader('Access-Control-Allow-Origin', '*'); // o un dominio specifico
+    res.setHeader('Access-Control-Allow-Methods', 'GET');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
     res.write(csv);
     res.end();
   } catch (err) {
